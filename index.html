@@ -17,8 +17,12 @@
             	<span>г.Санкт-Петербург, ул.Б.Конюшенная, д 19/8</span>
             </p>
             <ul>
-            	<li class="login-link">Вход</li>
-            	<li class="login-link">Регистрация</li>
+            	<li class="login-link">
+            		<a class="login-link" href="login.html">Вход</a>
+            	</li>
+            	<li class="login-link">
+            		<a class="login-link" href="login.html">Регистрация</a>
+            	</li>
             </ul>
             <nav class="main-navigation">
             	<ul class="site-navigation">
@@ -96,7 +100,7 @@
       						<a href="">Перфоратор<span class="">BOSCH BFG 9000</span></a>
       					</h3>
       					<p>
-      						<a href=""><img src="img/bosch9000.jpg" width="218" height="129" alt="Перфоратор BOSCH BFG 9000"></a>
+      						<a href=""><img src="img/bosch9000.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 9000"></a>
       					</p>
       					<p>
       						<span class="item-price">32500р.</span>
@@ -189,6 +193,7 @@
       			<p>
       				<h3 class="">Доставка</h3>
       				<span>Мы с удовольствием доставим ваш товар прямо к вашему подъездусовершенно бесплатно!Ведь мы не плохо заработаем поднимая его на ваш этаж!</span>
+      				
       			</p>
       			
       		</section>
@@ -205,8 +210,8 @@
       		</section>
       		<section class="contact">
       			<h2 class="caption">Контакты</h2>
-      			<p>Вы можете забрать товар сами, заехав в наш офис.</p>
-      			<p><img src="img/maps.jpg" width="300" height="158" alt="metabo"></p>
+      			<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+      			<p><img src="img/maps.jpg" width="300" height="158" alt="ул.Большая Конюшенная, 19"></p>
       			<a class="button contact-button" href="">Заблудились?Напишите нам.</a>
       		</section>
   		</main>
@@ -248,7 +253,26 @@
   			</section>
   		</footer>
   		<section class="modal">
-            <!-- Здесь будет форма -->
+  			<h1 class="visually-hidden">Ваш вопрос</h1>
+            <form class="letter" method="post"
+          		  action="">
+      		<p>
+        		<label for="letter-name">Ваше имя:</label>
+        		<input id="etter-name" type="text"
+               			name="name" placeholder="Представтесь,пожалуйста" >
+      		</p>
+      		<p>
+        		<label for="letter-mail">Ваш e-mail:</label>
+        		<input id="letter-mail" type="email"
+               			name="email" placeholder="Для отправки ответа">
+      		</p>
+      		<p>
+        		<label for="letter-text">Текст письма:</label>
+          		<textarea name="textarea" id="letter-text" rows="10" cols="100">В свободной форме</textarea>
+          	</p>
+      			<button type="submit">Отправить</button>
+    		</form>
+    		<button class="form-close" type="button">Закрыть</button>
 		</section>
   </body>
 </html>

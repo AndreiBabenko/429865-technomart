@@ -43,7 +43,45 @@
         <h1 class="title">Перфораторы</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--  форма -->
+            <form class="" method="post" action="" oninput="countoutput.value=count.value">
+                <fieldset class="form-count">
+                    <legend>Цена:</legend>
+                    <p>
+                    <input type="range" min="0" max="30000" name="count">
+                    <output>0</output>
+                    <output name="countoutput"></output>
+                    </p>
+                </fieldset>
+                <fieldset class="form-manufacturer">
+                    <legend>Производители:</legend>
+                    <label>
+                    <input type="checkbox" name="bosch" chesked>
+                    bosch
+                    </label>
+                    <label>
+                    <input type="checkbox" name="interscol">
+                    интерскол
+                    </label>
+                    <label>
+                    <input type="checkbox" name="makita" chesked>
+                    makita
+                    </label>
+                    <label>
+                    <input type="checkbox" name="dewalt">
+                    dewalt
+                    </label>
+                    <label>
+                    <input type="checkbox" name="hitachi">
+                    hitachi
+                    </label>
+                </fieldset>
+                <fieldset class="form-power">
+                    <legend>Питание:</legend>
+                    <input type="radio" name="power" value="Аккумуляторные">
+                    <input type="radio" name="power" value="Сетевые">
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
         </section>
         <section class="sort">
             <ul>
