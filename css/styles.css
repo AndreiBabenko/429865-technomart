@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-header {
+	font-family:  "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+  	line-height: 18px;
+  	color: #ffffff;
+  	background-color: #f3f7f9;
+}
+
+.header-logo {
+	background-color: #293449;
+}
+
+.main-header .phone-link {
+	font-size: 21px;
+  	line-height: 18px;
+  	color: #ee3643;
+}
+
+.header-link .link-activ {
+	color: #ffffff;
+	background-color: #63a63e;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about {
+	font-family:  "Cuprum", Arial, sans-serif;
+	font-style: italic;
+	font-size: 16px;
+  	line-height: 23px;
+  	color: #ee3643;
+}
+.header-contact span {
+	font-size: 14px;
+  	line-height: 24px;
+  	color: #32425c;
+
+}
+.login-link {
+	font-size: 21px;
+  	line-height: 18px;
+  	color: #000000;
+}
+.site-navigation,
+.login-link,
+.footer-site-navigation {
+  list-style: none;
+}
+
+.site-navigation {
+	font-size: 14px;
+  	line-height: 24px;
+  	color: #ffffff;
+
+  	background-color: #32425c;
+}
+
+.catalog-item {
+	width: 300px;
+	height: 123px;
+}
+
+.item-1 {
+	background-color: #ffbf47;
+}
+
+.item-2 {
+	background-color: #3bbce3;
+}
+
+.item-3 {
+	background-color: #dc91d8;
+}
+
+.item-4 {
+	background-color: #8ed78f;
+}
+
+.item-5 {
+	background-color: #ffc047;
+}
+/* что не так почему не видно картинку?*/
+.slides .flex-caption {
+	background-image: url("img/slider1.jpg") no-repeat #ffffff;
+	background-position: 0 0;
+    background-size: 620px 266px;
+
+}
+.slides {
+  list-style: none;
+}
+
+.catalog h3 {
+	font-family:  "Cuprum", Arial, sans-serif;
+	font-size: 24px;
+  	line-height: 30px;
+  	color: #ffffff;	
+}
+
+.catalog a {
+  	font-family:  "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+  	line-height: 18px;
+  	text-align: center;
+  	color: #ffffff;
+  	vertical-align: middle;
+  	text-transform: uppercase;
+
+  	background-color: rgba(0,0,0,0.1);
+  	border: none;
+}
+/*
+font-family: "Cuprum", Arial, sans-serif;
+font-family: "PT Sans", Arial, sans-serif;
+font-family: "PT Sans Narrow", Arial, sans-serif;
+*/

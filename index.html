@@ -3,21 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
   		<header class="main-header">
-  			<a class="main-header-logo">
-          		<img src="" width="" height="" alt="Лого">
-          	</a>
+        <div class="header-logo">
+  			     <a class="main-header-logo">
+          	   	<img src="" width="" height="" alt="Лого">
+              </a>
           	<form>
-          		<label for="search-header">Поиск:</label>
-          		<input type="search" name="search" id="search-header">
-          	</form>
-       		<a class="link header-link" href="">Закладки</a>
-            <a class="link header-link" href="">Корзина</a>
-            <a class="link header-link" href="">Оформить заказ</a>
-            <p>Интернет магазин строитьльных материалов и инструментов для ремонта</p>
-            <p><a class="button phone-link" href="tel:+78125550555">+7(812)555-05-55</a>
+          		  <label for="search-header">Поиск:</label>
+          		  <input type="search" name="search" id="search-header">
+          	 </form>
+       		   <a class="header-link" href="">Закладки</a>
+              <a class="header-link" href="">Корзина</a>
+              <a class="header-link link-activ" href="">Оформить заказ</a>
+        </div>
+            <p class="about">Интернет магазин строитьльных материалов и инструментов для ремонта</p>
+            <p class="header-contact"><a class="button phone-link" href="tel:+78125550555">+7(812)555-05-55</a>
             	<span>г.Санкт-Петербург, ул.Б.Конюшенная, д 19/8</span>
             </p>
             <ul>
@@ -46,47 +53,48 @@
       
       		<section class="catalog">
       			<h2 class="visually-hidden">Каталог</h2>
-      			<div class="catalog-item">
+      			<div class="catalog-item item-1">
       				<h3>Материалы</h3>
       				<a href="">На любой вкус</a>
       				<img src="img/icon-1.svg">
       			</div>
-      			<div class="catalog-item">
+      			<div class="catalog-item item-2">
       				<h3>Инструмент</h3>
       				<a href="">На все случаи</a>
       				<img src="img/icon-2.svg">
       			</div>
-      			<div class="catalog-item">
+      			<div class="catalog-item item-3">
       				<h3>Техника</h3>
       				<a href="">Для стройки</a>
       				<img src="img/icon-3.svg">
       			</div>
       			<div class="catalog-item">
 
-      				<ul class="slides">
-					   <li>
-						<div class="flex-caption">
-							<h3>Перфораторы</h3>
-      						<p>Настоящие мужские игрушки</p>
-      						<a href="">Открыть каталог</a>		
-      					</div>						
-					   </li>
-					   <li>						
-						<div class="flex-caption">
-							<h3>Дрели</h3>
-      						<p>Соседям на радость!</p>
-      						<a href="">Открыть каталог</a>		
-						</div>					
-					   </li>
-				   </ul>
+      			    <ul class="slides">
+					       <li>
+                  <!-- а нужен ли тут вообще див? -->
+						      <div class="flex-caption">
+							       <h3>Перфораторы</h3>
+      						    <p>Настоящие мужские игрушки</p>
+                      <a href="">Открыть каталог</a>		
+      			     </div>						
+					       </li>
+					       <li>						
+						      <div class="flex-caption">
+							       <h3>Дрели</h3>
+      						    <p>Соседям на радость!</p>
+      						    <a href="">Открыть каталог</a>		
+						      </div>					
+					       </li>
+				        </ul>
 		
       			</div>
-      			<div class="catalog-item">
+      			<div class="catalog-item item-4">
       				<h3>Скидки 50%</h3>
       				<a href="">На 350 товаров</a>
       				<img src="img/icon-4.svg">
       			</div>
-      			<div class="catalog-item">
+      			<div class="catalog-item item-5">
       				<h3>Доставка</h3>
       				<a href="">Бесплатно</a>
       				<img src="img/icon-5.svg">
@@ -186,21 +194,33 @@
       			<ul>
       				<li>
       					<a href="">Доставка</a>
-      					<img src="img/delivery.png">
+                <h3 class="">Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъездусовершенно бесплатно!Ведь мы не плохо заработаем поднимая его на ваш этаж!
+                </p>
+              	<img src="img/delivery.png">
       				</li>
       				<li>
       					<a href="">Гарантия</a>
+                <h3 class="">Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит, 
+                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+                <img src="img/guarantee.png">
       				</li>
       				<li>
       					<a href="">Кредит</a>
+                <h3 class="">Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще! 
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <button class="">Отправить заявку</button>
+                <img src="img/credit.png">
       				</li>
       			</ul>
-      			<p>
-      				<h3 class="">Доставка</h3>
-      				<span>Мы с удовольствием доставим ваш товар прямо к вашему подъездусовершенно бесплатно!Ведь мы не плохо заработаем поднимая его на ваш этаж!</span>
-      				
-      			</p>
-      			
+      			      			
       		</section>
       		<section class="about-as">
       			<h2 class="caption">Компания"Техномарт"</h2>
